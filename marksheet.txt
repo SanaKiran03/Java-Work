@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        var english= parseFloat(prompt("enter your english number"));
+        var Urdu=parseFloat(prompt("enter your Urdu number"));
+        var maths=parseFloat(prompt("enter your Maths number"));
+        var chemistry=parseFloat(prompt("enter your chemistry number"));
+        var physics=parseFloat(prompt("enter your physics number"));
+        var computer=parseFloat(prompt("enter your Computer number"));
+        var Islamiat=parseFloat(prompt("enter your islamiat number"));
+        var obt= english + Urdu + maths + chemistry + physics + computer + Islamiat;
+        var per= obt / 700 * 100;
+        document.write("obtained marks="+obt+"<br>");
+        document.write("percentage="+per+"<br>");
+    </script>
+</body>
+</html>

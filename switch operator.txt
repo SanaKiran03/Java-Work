@@ -1,0 +1,58 @@
+
+
+
+<!DOCTYPE html>
+<!-- saved from url=(0042)file:///E:/Assignments%20Aptech/table.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<Body>
+<script>
+// program for a simple calculator
+var result;
+
+// take the operator input
+var operator = prompt('Enter operator ( either +, -, *, / or **): ');
+
+// take the operand input
+var number1 = parseFloat(prompt('Enter first number: '));
+var number2 = parseFloat(prompt('Enter second number: '));
+
+switch(operator) {
+    case '+': case 'add':{ 
+        result = number1 + number2;
+        document.write (`${number1} + ${number2} = ${result}`);
+        break;
+          }
+    case '-': case 'sub':{
+        result = number1 - number2;
+        document.write(`${number1} - ${number2} = ${result}`);
+        break;
+       }
+    case '*': case 'mul':{
+        result = number1 * number2;
+       document.write(`${number1} * ${number2} = ${result}`);
+        break;
+         }
+    case '/': case 'divide':{
+        result = number1 / number2;
+        document.write(`${number1} / ${number2} = ${result}`);
+        break;
+         }
+		case '**': case 'power':{
+        result = number1 ** number2;
+        document.write(`${number1} ** ${number2} = ${result}`);
+        break;
+        }
+	
+    default:
+        document.write('Invalid operator');
+        break;
+}
+</script>
+
+</Body>
+</html>
